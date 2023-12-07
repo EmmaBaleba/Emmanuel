@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UOF pratiques numériques</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-image: url("https://images.unsplash.com/photo-1627484164075-1f4126482550?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA2fHxmZXVpbGxlJTIwYmxhbmNoZXxlbnwwfHwwfHx8MA%3D%3D");
+        background-repeat: no-repeat;
+        background-size: 110% 110%;
+        color: #fff;
+        width: 50%;
+        margin: 60px auto;
+        font-family: "Solitreo", cursive;
+      }
+      h1 {
+        color: olivedrab;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+          background: linear-gradient(
+          108deg,
+          rgb(75, 47, 23) 45%,
+          rgb(152, 114, 82) 76%,
+          rgb(157, 127, 101) 93%
+        );
+        margin: 50px 70px 50px 0px;
+        font-family: "Edu TAS Beginner", cursive;
+        border: 5px solid;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+         animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+      }
+      .shadowbox {
+    width: 40em;
+    border: 1px solid #333;
+    box-shadow: 8px 8px 5px #444;
+    padding: 8px 12px;
+    background-image: linear-gradient(
+          108deg,
+          rgb(75, 47, 23) 45%,
+          rgb(152, 114, 82) 76%,
+          rgb(157, 127, 101) 93%
+        );
+      }
+      .paragraph1 {
+        color: #b4f1c9;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        text-align: center;
+      }
+      .paragraph2 {
+        color: #b4f1c9;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          text-align: center;
+      }
+      .paragraph3 {
+        color: #b4f1c9;
+        font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+        text-align: center;
+      }
+      .paragraph4 {
+        color: #b4f1c9;
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+      }
+      .paragraph5 {
+        color: #b4f1c9;
+        font-family: Georgia, "Times New Roman", Times, serif;text-align: center;
+      }
+      p {
+        font-size: 20px;
+        text-align: justify;
+      }
+      img {
+        width: 300px;
+        display: block;
+        margin: 0px auto;
+        border: 5px rgb(32, 25, 25) solid;
+        margin: 10px;
+        border-radius: 40px;
+        margin: auto;
+      }
+      button {
+        display: block;
+        margin: 30px auto;
+        color: aqua;
+        font-size: 20px;
+        background: linear-gradient(blue, rgb(6, 6, 100));
+        padding: 15px 20px;
+        cursor: pointer;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
+        border-radius: 20px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: rgb(53, 2, 36);
+        border-radius: 20px;
+         text-decoration: underline;
+        cursor: pointer;
+      }
+      
+      button {
+        background-color: rgb(53, 2, 36);
+        border-radius: 20px;
+        color: aqua;
+        
+      }
+      li {
+        color: #0c3e8f;
+      }
+     a {
+  color: blue;
+  
+  transition: all 1s ease-out;
+}
+
+a:hover,
+a:focus {
+  color: #333;
+  background-color: #fff;
+} #html-spinner{
+  width:40px;
+  height:40px;
+  border:4px solid black;
+  border-top:4px solid white;
+  border-radius:50%;
+}#container{
+  width:90%;
+  max-width:700px;
+  margin:1em auto;
+  position:relative;
+  #html-spinner, #svg-spinner{
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1.2s;
+  -webkit-animation-name: rotate;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  
+  -moz-transition-property: -moz-transform;
+  -moz-animation-name: rotate; 
+  -moz-animation-duration: 1.2s; 
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  
+  transition-property: transform;
+  animation-name: rotate; 
+  animation-duration: 1.2s; 
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+}@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+p span {
+  background: rgba(11, 11, 74, 0.429);
+} .p6 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+    </style>
+  </head>
+  <body>
+  <h1>L'Évolution de l'Écriture à l'Ère Numérique</h1>
+   <div class="shadowbox">
+
+    <p class="paragraph1">
+      L'écriture, un pilier de la communication humaine, connaît des évolutions
+      à l'ère numérique, impactant la manière dont non seulement les personnes
+      et surtout les enfants acquièrent cette compétence. Cette thèse se penche
+      sur les défis de l'écriture traditionnelle à l'ère numérique.
+    </p>
+   
+    <p class="paragraph2">
+      Les enfants d'aujourd'hui sont exposés très tôt aux tablettes, ce qui
+      réduit leur intérêt pour l'écriture manuscrite et entraine une perte
+      progressive des compétences en écriture manuscrit. Cependant dans un monde
+      numérique, la maîtrise de l'écriture reste un atout essentiel pour réussir
+      dans le futur.
+    </p>
+    <p class="paragraph3">
+      De plus, l'utilisation de correcteurs automatiques et d'outils de
+      traitement de texte facilite la rédaction et la correction rapide, ce qui
+      peut augmenter la productivité des élèves et des professionnels, mais peut
+      également diminuer la motivation d’améliorer les compétences en
+      orthographe et en grammaire. L'auteur adopte une approche
+      sociolinguistique, mettant en évidence la variation linguistique et
+      l'importance de reconnaître les variétés linguistiques utilisées par les
+      élèves, sans les stigmatiser.
+    </p>
+    <p class="paragraph4">
+      L'écriture manuscrite est essentielle pour le développement cognitif des
+      enfants, notamment pour l'apprentissage de la lecture et de l'orthographe.
+      Plutôt que de voir la technologie numérique comme une menace pour
+      l'écriture traditionnelle, il est essentiel d'encourager un équilibre
+      entre les deux.
+    </p>
+    <p class="paragraph5">
+      En résumé, bien que des préoccupations subsistent quant à l'impact de la
+      technologie numérique sur l'écriture manuscrite, il est important de
+      reconnaître que l'équilibre entre les compétences traditionnelles en
+      écriture manuscrite et les compétences numériques est essentiel dans le
+      monde moderne. La technologie peut être un atout pour l'apprentissage et
+      la communication, à condition d'être utilisée de manière équilibrée et
+      éducativement appropriée.
+    </p></div><br/>
+
+    <img src="image/image.png" alt="un enfant utilisant un ordinateur" />
+    <button class="favorite styled" type="button">Mon button</button>
+
+    <hr /><br/>
+    <ul>
+      <li><strong>
+         
+        Petit, V., & Bouchardon, S. (2018, MARS 1). L’écriture numérique ou
+        l’écriture selon les machines.
+       <em>Enjeux philosophiques et pédagogiques</em>
+        Cahiers Costech, (2),39-41 URL
+        <a href="https://www.costech.utc.fr/CahiersCostech/spip.php?article47">
+          https://www.costech.utc.fr/CahiersCostech/spip.php?article47
+        </a>
+     </li>
+      <li>
+        Garcia-Debanc, C. (2013). La condition numérique va-t-elle modifier la
+        place de l'écriture dans les pratiques scolaires?.<em>La Lettre de l'AIRDF,</em> 
+        (54),22-26 DOI :
+        <a href="https://doi.org/10.3406/airdf.2013.1978"
+          >https://doi.org/10.3406/airdf.2013.1978</a
+        >
+      </li>
+      <li>
+        Penloup, M. (2018 Mars 14&15). PEUT-ON MOBILISER LES PRATIQUES HORS
+        ÉCOLE L ÉCRITURE NUMÉRIQUE?. URL
+        <a
+          href="https://www.cnesco.fr/wp-content/uploads/2018/04/CCEcrits_note_Penloup.pdf"
+          >https://www.cnesco.fr/wp-content/uploads/2018/04/CCEcrits_note_Penloup.pdf</a
+        >
+      
+       </strong></li>
+      <hr />
+      
+  <button><a href="https://moodle.uontario.ca">website</a></button>
+  <button><a href="mailto:emmanuelf.baleba@uof.ca">email</a></button>
+  <button><a href="tel:+1(647)5132062">phone</a></button>
+ 
+      
+    </ul>
+    <div id="container">
+
+  <div id="html-spinner"></div>
+  <p class="p6"><span>Have a nice day</span></p>
+    
+    <script>
+      function infoBouton() {
+        let prenom = prompt("Quel est ton prenom ?");
+        let nom = prompt("Quel est ton nom ?");
+
+        alert("Merci" + prenom + ", Passe une bonne journée");
+      }
+
+      let cliqueMoi = document.querySelector("button");
+      cliqueMoi.addEventListener("click", infoBouton);
+    </script>
+  </body>
+</html>
